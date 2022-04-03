@@ -1,0 +1,82 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: bisque;
+justify-content: center;
+align-items: center;
+    
+}
+body{
+    margin: 0;
+}
+#img-div{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    background-color: antiquewhite;
+}
+#img-caption{
+    font-size: 18px;
+}
+img{
+    width: 50%;
+    height: auto;
+}
+#title{
+    text-align: center;
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#tribute-info{
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 150px 150px;
+    gap: 15px;
+}
+.contributions-div{
+    width: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 150px;
+    color: aliceblue;
+    background-image: url("./fondox2.png");
+
+    border-radius: 25px;
+    background-color: white;
+}
+
+@media (min-width:800px){
+    #tribute-info{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+    }
+}
+@media (min-width:1000px){
+    #tribute-info{
+        display: grid;
+        grid-template-columns: repeat(4,200px);
+    }
+}
+@media (max-width:799px){
+    #tribute-info{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2,200px);
+    }
+}
+a{
+   margin:70px;
+    font-size: 25px;
+}
+.contributions-div:hover{
+    transform: translateY(-5pX);
+}
